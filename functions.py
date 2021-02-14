@@ -10,7 +10,16 @@ def multiply(x, y):
 
 
 def is_sentence_palindrome(string):
-    return string[::-1].replace(" ", "").replace("?", "").replace(",", "").lower() == string.replace(" ", "").replace("?", "").replace(",", "").lower()
+    string = ""
+    for char in sentence:
+        if char.isalnum():
+            string += char
+    return string[::-1].casefold() == string.casefold()
+
+# my fist solution, not very efficent and not dynamic for a ll characters
+# def is_sentence_palindrome(string):
+#     return string[::-1].replace(" ", "").replace("?", "").replace(",", "").lower() \
+#            == string.replace(" ", "").replace("?", "").replace(",", "").lower()
 
 
 sentence = input("Please enter a sentence to check: ")
@@ -18,7 +27,6 @@ if is_sentence_palindrome(sentence):
     print("'{}' is a palindrome".format(sentence))
 else:
     print("'{}' is not a palindrome".format(sentence))
-
 
 # word = input("Please enter a word to check: ")
 # if is_palindrome(word):
