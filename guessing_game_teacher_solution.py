@@ -6,6 +6,8 @@ def get_integer(prompt):
         temp = input(prompt)
         if temp.isnumeric():
             return int(temp)
+        else:
+            print("Please enter a valid whole number")
 
 
 highest = 1000
