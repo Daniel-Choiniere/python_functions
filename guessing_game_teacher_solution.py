@@ -29,8 +29,4 @@ while guess != answer:
             print("Please guess higher")
         else:  # guess must be greater than answer
             print("Please guess lower")
-        # guess = int(input())
-        # if guess == answer:
-        #     print("Well done, you guessed it")
-        # else:
-        #     print("Sorry, you have not guessed correctly")
+

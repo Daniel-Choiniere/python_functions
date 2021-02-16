@@ -16,7 +16,7 @@ def is_sentence_palindrome(sentence):
             string += char
     return is_palindrome(string)
 
-# my fist solution, not very efficent and not dynamic for a ll characters
+# my fist solution, not very efficient and not dynamic for a ll characters
 # def is_sentence_palindrome(string):
 #     return string[::-1].replace(" ", "").replace("?", "").replace(",", "").lower() \
 #            == string.replace(" ", "").replace("?", "").replace(",", "").lower()
