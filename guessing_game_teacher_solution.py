@@ -2,6 +2,11 @@ import random
 
 
 def get_integer(prompt):
+    """
+
+    :param prompt:
+    :return:
+    """
     while True:
         temp = input(prompt)
         if temp.isnumeric():
