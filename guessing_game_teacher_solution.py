@@ -3,9 +3,13 @@ import random
 
 def get_integer(prompt):
     """
+    Get an integer from STandard Input (stdin).
 
-    :param prompt:
-    :return:
+    The function will continue looping, and prompting the user, until a
+    valid `int` is entered.
+    :param prompt: The string that the user will see, when they are
+        prompted to enter the value.
+    :return: The integer that the user enters.
     """
     while True:
         temp = input(prompt)
