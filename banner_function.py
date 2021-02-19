@@ -1,5 +1,12 @@
-def banner_text(text, screen_width):
+def banner_text(text: str = " ", screen_width: int = 80) -> None:
 
+    """
+    Creates a banner with specified text and width
+    :param text: The text to be displayed in banner
+    :param screen_width: The width of the banner that will contain text
+    :raises: ValueError: If screen_width is too large
+
+    """
     if len(text) > screen_width - 4:
         raise ValueError("String {0} is larger than specified width {1}"
                          .format(text, screen_width))
@@ -12,7 +19,7 @@ def banner_text(text, screen_width):
         print(output_string)
 
 
-banner_text("*", 66)
+banner_text("*", 81)
 banner_text("Always look on the bright side of life...", 66)
 banner_text("If life seems jolly rotten,", 66)
 banner_text("There's something you've forgotten!", 66)
