@@ -1,4 +1,4 @@
-def multiply(x, y):
+def multiply(x: float, y: float) -> float:
     """
     Takes two `int` and gets the product.
     :param x: First `int` to be multiplied
@@ -9,7 +9,7 @@ def multiply(x, y):
     return result
 
 
-def is_palindrome(string):
+def is_palindrome(string: str) -> bool:
     """
     Checks if a `str` is the same backwards or forwards,
     :param string: The `str` to be checked.
@@ -20,7 +20,7 @@ def is_palindrome(string):
     return string[::-1].lower() == string.lower()
 
 
-def is_sentence_palindrome(sentence):
+def is_sentence_palindrome(sentence: str) -> bool:
     """
     Check if a sentence is the same backwards or forwards.
     Ignores whitespace, capitalisation, and punctuation in the sentence.
@@ -39,11 +39,13 @@ def is_sentence_palindrome(sentence):
 #            == string.replace(" ", "").replace("?", "").replace(",", "").lower()
 
 
-word = input("Please enter a sentence to check: ")
-if is_sentence_palindrome(word):
-    print("'{}' is a palindrome".format(word))
+sentence = input("Please enter a sentence to check: ")
+if is_sentence_palindrome(sentence):
+    print("'{}' is a palindrome".format(sentence))
 else:
-    print("'{}' is not a palindrome".format(word))
+    print("'{}' is not a palindrome".format(sentence))
+
+
 
 
 # # two blank lines after a function declaration
