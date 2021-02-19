@@ -1,15 +1,32 @@
 def multiply(x, y):
+    """
+    Takes two `int` and gets the product.
+    :param x: First `int` to be multiplied
+    :param y: Second `int` to be multiplied
+    :return: Product of x and y
+    """
     result = x * y
     return result
 
 
 def is_palindrome(string):
+    """
+    Checks if a `str` is the same backwards or forwards,
+    :param string: The `str` to be checked.
+    :return: `True` if the `str` is same backwards or forwards, `False` if it is not.
+    """
     # backwards = string[::-1]
     # return backwards == string
     return string[::-1].lower() == string.lower()
 
 
 def is_sentence_palindrome(sentence):
+    """
+    Check if a sentence is the same backwards or forwards.
+    Ignores whitespace, capitalisation, and punctuation in the sentence.
+    :param sentence: Sentence to check
+    :return: True if the sentence is same backwards or forwards, False if it is not.
+    """
     string = ""
     for char in sentence:
         if char.isalnum():
