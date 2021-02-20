@@ -8,13 +8,13 @@ def fizz_buzz(n: int) -> str:
         if not divisible by either
     """
     if n % 3 == 0 and n % 5 == 0:
-        return "fizz buzz"
+        print("{}: fizz buzz".format(n))
     elif n % 3 == 0:
-        return "fizz"
+        print("{}: fizz".format(n))
     elif n % 5 == 0:
-        return "buzz"
+        print("{}: buzz".format(n))
     else:
-        return str(n)
+        print(str(n))
 
 
 for number in range(1, 101):
