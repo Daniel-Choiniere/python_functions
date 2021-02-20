@@ -10,4 +10,5 @@ def factorial(n: int) -> int:
     return total
 
 
-factorial(0)
+for i in range(36):
+    print(factorial(i))
